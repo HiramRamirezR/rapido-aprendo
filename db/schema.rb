@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_29_200718) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_29_222710) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "answers", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.bigint "task_id", null: false
+    t.bigint "flashcard_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["task_id"], name: "index_answers_on_task_id"
+    t.index ["flashcard_id"], name: "index_answers_on_flashcard_id"
     t.index ["user_id"], name: "index_answers_on_user_id"
   end
 
@@ -45,7 +45,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_29_200718) do
   create_table "tasks", force: :cascade do |t|
     t.string "title"
     t.string "details"
-    t.string "media"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -60,12 +59,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_29_200718) do
     t.datetime "updated_at", null: false
     t.string "first_name"
     t.string "last_name"
-    t.boolean "therapist?", default: false
+    t.boolean "therapist"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "answers", "tasks"
+  add_foreign_key "answers", "flashcards"
   add_foreign_key "answers", "users"
   add_foreign_key "assigments", "tasks"
   add_foreign_key "assigments", "users"
