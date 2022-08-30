@@ -1,2 +1,21 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home-page">
+  <div class="home-page-info">
+    <div class="home-page-title">
+      <h1>Plataforma educativa para <span>padres</span> y <span>logopedas</span> con fin de combatir el <span>rotacismo</span></h1>
+    </div>
+    <div class="home-page-subtitle">
+      <p>Totalmente gratuita dedicada a combatir el incorrecto pronunciamiento de la letra r, ayudándolos con lecciones y terapeutas especializados</p>
+    </div>
+    <div class="home-page-button">
+      <%= link_to "Registrarse", new_user_session_path, class: "boton registrarse" %>
+    </div>
+  </div>
+  <div class="home-page-image">
+    <img src="https://images.unsplash.com/photo-1617117206620-b01f2919ff86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="Kids drawing rapido aprendo">
+  </div>
+</div>
+<div class="barra-insignias">
+  <div class="insignias">
+    <img src="/app/assets/svgs/logoipsum-214.svg" alt="Primerlogo">
+  </div>
+</div>
