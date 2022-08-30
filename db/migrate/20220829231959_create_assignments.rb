@@ -1,6 +1,6 @@
-class CreateAssigments < ActiveRecord::Migration[7.0]
+class CreateAssignments < ActiveRecord::Migration[7.0]
   def change
-    create_table :assigments do |t|
+    create_table :assignments do |t|
       t.date :initial
       t.date :final
       t.boolean :done
