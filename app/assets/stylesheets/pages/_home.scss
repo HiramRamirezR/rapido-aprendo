@@ -1,1 +1,73 @@
 // Specific CSS for your home-page
+
+//NAV VAR
+body{
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-weight: bold;
+  color: $morado;
+}
+
+.boton{
+    color: #fff;
+    padding: 15px 45px;
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 13px;
+    transition: all 0.3s;
+    &:hover{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      color: #fff;
+  }
+}
+.entrar{
+  background-color: $salmon;
+}
+
+//HOME PAGE
+
+//PRIMERA PAGINA
+.home-page{
+  height: 70vh;
+  display: flex;
+  padding: 0 100px;
+  margin-top: 50px;
+  .home-page-info{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 55%;
+    justify-content: space-between;
+    .home-page-title h1{
+      font-size: 60px;
+      color: black;
+      span{
+        color: $morado;
+      }
+    }
+    .home-page-subtitle{
+      width: 85%;
+      p{
+        font-size: 20px;
+      }
+    }
+
+    .registrarse{
+      background-color: $amarillo;
+    }
+  }
+  .home-page-image{
+    width: 45%;
+    padding-top: 60px;
+    img{
+      border-radius: 15px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      width: 550px;
+    }
+  }
+}
