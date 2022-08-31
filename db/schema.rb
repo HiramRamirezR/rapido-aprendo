@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_30_222506) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_31_160122) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -31,7 +31,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_30_222506) do
     t.bigint "task_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "completed", default: false
     t.index ["task_id"], name: "index_assignments_on_task_id"
     t.index ["user_id"], name: "index_assignments_on_user_id"
   end
@@ -40,7 +39,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_30_222506) do
     t.bigint "task_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "completed", default: false
+    t.string "content"
+    t.string "answer"
     t.index ["task_id"], name: "index_flashcards_on_task_id"
   end
 
@@ -49,7 +49,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_30_222506) do
     t.string "details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "completed", default: false
   end
 
   create_table "users", force: :cascade do |t|
