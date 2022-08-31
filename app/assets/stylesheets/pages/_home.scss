@@ -71,3 +71,57 @@ h1{
     }
   }
 }
+
+//BARRA DE INSIGNIAS
+.barra-insignias{
+  width: 100%;
+  height: 175px;
+  background-color: $fondo-morado;
+  .insignias{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      height: 80px;
+    }
+  }
+}
+
+//PAGINA DE CARDS
+.cards-page{
+  height: 100vh;
+  .cards-header{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .cards-title{
+      width: 100%;
+      height: auto;
+      text-align: center;
+      h4{
+        font-weight: bold;
+      }
+    }
+    .cards-subtitle p{
+      margin-top: 15px;
+      font-size: 20px;
+      font-weight: lighter;
+    }
+  }
+}
+
+//CARDS
+.cards-home{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 100px;
+  margin-top: 40px;
+}
