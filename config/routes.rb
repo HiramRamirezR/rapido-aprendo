@@ -7,4 +7,5 @@ Rails.application.routes.draw do
       resources :flashcards, only: %i[index show update]
     end
   end
+  resources :users, only: :show
 end
