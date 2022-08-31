@@ -2,10 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
 
-  resources :assignments, only: %i[index show update] do
-    resources :tasks, only: %i[index show update] do
-      resources :flashcards, only: %i[index show update]
-    end
+  resources :tasks, only: %i[index show] do
+    resources :flashcards, only: :index
+    resources :assignment, only: :create
   end
   resources :users, only: :show
 end
