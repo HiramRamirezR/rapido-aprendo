@@ -74,11 +74,11 @@ h1{
 
 //BARRA DE INSIGNIAS
 .barra-insignias{
-  width: 100%;
+  max-width: 100%;
   height: 175px;
   background-color: $fondo-morado;
   .insignias{
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
