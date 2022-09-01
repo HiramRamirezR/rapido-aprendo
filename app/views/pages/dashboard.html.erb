@@ -1,1 +1,175 @@
-<h1>Dashboard</h1>
+<div class="dashboard-page">
+  <div class="user-container">
+    <div class="user-info">
+
+      <div class="user-avatar">
+        <%= cl_image_tag current_user.photo.key, style:"width:200px;" %>
+      </div>
+      <div class="user-name">
+        <h5><%= @user.first_name %> <%= @user.last_name %></h5>
+      </div>
+      <div class="doctor">
+        <p>Doctor: Angel Ramirez Escobedo</p>
+      </div>
+    </div>
+
+    <div class="user-dashboard">
+      <div class="date">
+        <%= @date = Time.now
+        @date.strftime("%d %B, %Y") %>
+      </div>
+      <div class="user-chart">
+        <div class="days-lunes">
+          <div class="caja lunes"></div>
+          <div class="caja lunes"></div>
+          <div class="caja lunes"></div>
+          <div class="caja lunes letra">L</div>
+        </div>
+
+        <div class="days-martes">
+          <div class="caja martes"></div>
+          <div class="caja martes"></div>
+          <div class="caja martes"></div>
+          <div class="caja martes letra">M</div>
+        </div>
+
+        <div class="days-miercoles">
+          <div class="caja miercoles"></div>
+          <div class="caja miercoles"></div>
+          <div class="caja miercoles"></div>
+          <div class="caja miercoles letra">M</div>
+        </div>
+
+        <div class="days-jueves">
+          <div class="caja jueves"></div>
+          <div class="caja jueves"></div>
+          <div class="caja jueves"></div>
+          <div class="caja jueves letra">J</div>
+        </div>
+
+        <div class="days-viernes">
+          <div class="caja viernes"></div>
+          <div class="caja viernes"></div>
+          <div class="caja viernes"></div>
+          <div class="caja viernes letra">V</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="todo-information">
+    <div class="tasks-container">
+      <div class="task-title">
+        <h3>Tareas</h3>
+      </div>
+      <div class="app-cards">
+        <div class="app-card">
+          <div class="app-card-title">
+            <h4>Titulo</h4>
+          </div>
+          <div class="card-text">
+            <div class="app-card-info">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nemo, facere eius non hic iusto voluptas, necessitatibus asperiores a recusandae illum cupiditate praesentium error velit ullam fugiat nobis facilis ea?</p>
+            </div>
+            <div class="app-card-button">
+              <a href="#">Comenzar</a>
+            </div>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="app-card-title">
+            <h4>Titulo</h4>
+          </div>
+          <div class="app-card-info">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nemo, facere eius non hic iusto voluptas</p>
+          </div>
+          <div class="app-card-button">
+            <a href="#">Comenzar</a>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="app-card-title">
+            <h4>Titulo</h4>
+          </div>
+          <div class="app-card-info">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nemo, facere eius non hic iusto voluptas, necessitatibus asperiores </p>
+          </div>
+          <div class="app-card-button">
+            <a href="#">Comenzar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flashcards-container">
+      <div class="flashcards-title">
+        <h4>Ultimas flashcards</h4>
+      </div>
+      <div class="app-flashcards">
+        <div class="app-flashcard">
+          <div class="app-flashcard-title">
+            <h5>Titulo</h5>
+          </div>
+          <div class="app-flashcard-info">
+            <ul>
+              <li>Audio</li>
+              <li>Imagen</li>
+              <li>Pregunta</li>
+            </ul>
+          </div>
+          <div class="app-flashcard-button">
+            <a href="#">Comenzar</a>
+          </div>
+        </div>
+
+        <div class="app-flashcard">
+          <div class="app-flashcard-title">
+            <h5>Titulo</h5>
+          </div>
+          <div class="app-flashcard-info">
+            <ul>
+              <li>Audio</li>
+              <li>Imagen</li>
+              <li>Pregunta</li>
+            </ul>
+          </div>
+          <div class="app-flashcard-button">
+            <a href="#">Comenzar</a>
+          </div>
+        </div>
+
+        <div class="app-flashcard">
+          <div class="app-flashcard-title">
+            <h5>Titulo</h5>
+          </div>
+          <div class="app-flashcard-info">
+            <ul>
+              <li>Audio</li>
+              <li>Imagen</li>
+              <li>Pregunta</li>
+            </ul>
+          </div>
+          <div class="app-flashcard-button">
+            <a href="#">Comenzar</a>
+          </div>
+        </div>
+
+        <div class="app-flashcard">
+          <div class="app-flashcard-title">
+            <h5>Titulo</h5>
+          </div>
+          <div class="app-flashcard-info">
+            <ul>
+              <li>Audio</li>
+              <li>Imagen</li>
+              <li>Pregunta</li>
+            </ul>
+          </div>
+          <div class="app-flashcard-button">
+            <a href="#">Comenzar</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

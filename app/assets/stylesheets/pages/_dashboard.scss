@@ -1,0 +1,177 @@
+.dashboard-page{
+  padding: 40px 0 40px 50px;
+  height: 91vh;
+  display: flex;
+}
+
+.user-container{
+  width: 30%;
+  height: 640px;
+  background-color: #fff3f2;
+  padding: 30px;
+  border: 1px solid #000;
+  border-radius: 13px;
+  margin-right: 45px;
+  .user-info{
+    width: 100%;
+    .user-avatar{
+      display: flex;
+      justify-content: center;
+      img{
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    }
+    .user-name{
+      text-align: center;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+    .doctor p{
+      text-align: center;
+    }
+  }
+
+  .user-dashboard{
+    background-color: #fff;
+    padding: 25px;
+    height: 270px;
+    border-radius: 13px;
+    border: 1px solid #000;
+    .date{
+      width: 100%;
+      text-align: center;
+    }
+    .user-chart{
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      height: 195px;
+      .caja{
+        height: 20px;
+        width: 20px;
+        margin: 10px;
+        border: 1px solid black;
+      }
+      .caja.lunes{
+        background-color: #72ae9a;
+      }
+      .lunes.letra{
+        background-color: #d9ece7;
+      }
+      .caja.martes{
+        background-color: #fbe486;
+      }
+      .martes.letra{
+        background-color: #fef6dc;
+      }
+      .caja.miercoles{
+        background-color: #f79597;
+      }
+      .miercoles.letra{
+        background-color: #fbdfdf;
+      }
+      .caja.jueves{
+        background-color: #aeacdf;
+      }
+      .jueves.letra{
+        background-color: #e6e6f6;
+      }
+      .caja.viernes{
+        background-color: #b8d3ff;
+      }
+      .viernes.letra{
+        background-color: #e8f2fe;
+      }
+      .letra{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.todo-information{
+  width: 100%;
+  .tasks-container{
+    height: 350px;
+    width: 100%;
+    .app-cards{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px;
+      height: 310px;
+      width: 100%;
+      .app-card{
+        background-color: #EFEEEE;
+        max-width: 30%;
+        border: 1px solid black;
+        border-radius: 13px;
+        padding: 20px;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+
+        .app-card-info{
+           p{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+           }
+
+        }
+        .app-card-button{
+          margin-top: 30px;
+         a{
+          background-color: #F4C90E;
+          color: white;
+          font-weight: bolder;
+          text-decoration: none;
+          padding: 10px 20px;
+          border-radius: 10px;
+        }
+      }
+      }
+    }
+  }
+  .flashcards-container{
+    height: 290px;
+    .app-flashcards{
+      display: flex;
+      padding: 15px;
+      align-items: center;
+      width: 950px;
+      .app-flashcard{
+        margin-left: 15px;
+        background-color: #e2f0ec;
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 13px;
+        padding: 20px;
+        height: 235px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .app-flashcard-button{
+          margin-top: 30px;
+         a{
+          font-size: 14px;
+          background-color: #F4C90E;
+          color: white;
+          font-weight: bolder;
+          text-decoration: none;
+          padding: 8px 16px;
+          border-radius: 8px;
+         }
+        }
+      }
+    }
+  }
+}
