@@ -7,6 +7,11 @@ class User < ApplicationRecord
   has_many :answers, dependent: :destroy
   has_many :tasks, through: :assignments
   has_many :flashcards, through: :answers
+  has_one_attached :photo
+
+  def after_update
+    redirect_to user_path(current_user)
+  end
 
   validates :first_name, :last_name, presence: true
 end
