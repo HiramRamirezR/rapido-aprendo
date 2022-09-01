@@ -10,3 +10,25 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.fondo-navbar{
+  background-color: $fondo-navbar;
+}
+
+.botones-navbar{
+  height: 100%;
+  list-style: none;
+  display: flex;
+  li{
+    margin-top: 12px;
+    padding-left: 80px;
+    a{
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      &:hover{
+        color: $morado;
+      }
+    }
+  }
+}
