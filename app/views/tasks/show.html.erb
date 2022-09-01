@@ -1,1 +1,11 @@
-<h1>Taks details</h1>
+<div class="container">
+  <div class="card" style="width: 18rem;">
+  <h2>Tarea</h2>
+    <div class="card-body">
+    <h4 class="card-title">Nombre: <%= @task.title %></h3>
+    <p class="card-text">Descripción: <%= @task.details %></p>
+    <%= link_to "Comenzar flashcards", task_flashcards_path(@task), class: "btn btn-primary" %>
+    <%= link_to "Volver a las tareas", tasks_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

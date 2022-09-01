@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="card" style="width: 18rem;">
+  <h2>Flashcards</h2>
+    <div class="card-body">
+    <h4 class="card-title">Tarea: <%= @task.title %></h3>
+    <p class="card-text">Descripción: <%= @task.details %></p>
+    <%= link_to "Volver a la tarea", task_path(@task), class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

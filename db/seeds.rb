@@ -10,9 +10,18 @@ require "date"
 
 User.destroy_all
 user = User.create(first_name: "Hugo", last_name: "Hernandez", therapist: "true", email: "hugo@gmail.com", password: "hello123")
+user = User.create(first_name: "Hiram", last_name: "Ramirez", therapist: "false", email: "hiram@gmail.com", password: "123456")
+user = User.create(first_name: "Daniel", last_name: "Santillan", therapist: "false", email: "daniel@gmail.com", password: "hello123")
 
 Task.destroy_all
 task = Task.create(title: "Pronunciacion", details: "pronunciar r")
+task = Task.create(title: "Ejercicios", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+task = Task.create(title: "Práctica", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500")
+task = Task.create(title: "Trabajando con vocales", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500")
+task = Task.create(title: "Ejercicios con materiales", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+task = Task.create(title: "Práctica con espejo", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+task = Task.create(title: "Inflar un globo", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+task = Task.create(title: "Morder un lápiz", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
 
 Assignment.destroy_all
 assignment = Assignment.new(initial: Date.today, final: Date.today, done: false)
