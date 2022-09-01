@@ -9,6 +9,7 @@
 
         <br><h5 style="color: #5D58C0;">Edita los campos que deseas modificar</h5><br>
         <div class="form-inputs">
+          <%= f.input :photo, as: :file, autofocus: true %>
         <%= f.input :first_name,
                       required: true,
                       autofocus: true %>
@@ -24,16 +25,16 @@
                       hint: "leave it blank if you don't want to change it",
                       required: false,
                       input_html: { autocomplete: "new-password" } %>
-
-          <br><h5 style="color: #5D58C0;">Guardar cambios</h5><br>
           <%= f.input :password_confirmation,
                       required: false,
                       input_html: { autocomplete: "new-password" } %>
+
+          <br><h5 style="color: #5D58C0;">Guardar cambios</h5><br>
+
           <%= f.input :current_password,
                       hint: "we need your current password to confirm your changes",
                       required: true,
                       input_html: { autocomplete: "current-password" } %>
-          <%= f.input :photo, as: :file, autofocus: true %>
         </div>
 
         <div class="form-actions">
@@ -42,7 +43,8 @@
         </div>
         <br>
       <% end %>
-      <%= link_to "Regresar", :back, class:"boton bg-secondary" %>
+
+      <%= link_to "Regresar", user_path(current_user), class:"boton bg-secondary" %>
       <br><br><br>
       <p class="text-muted">Cancel my account</p>
 
