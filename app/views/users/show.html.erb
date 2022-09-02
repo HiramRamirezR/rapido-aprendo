@@ -1,7 +1,11 @@
 <h2>Tus datos</h2>
 <div class="show-user-page">
     <div class="show-avatar">
-      <%= cl_image_tag @user.photo.key %>
+      <% unless current_user.photo.attached? %>
+        <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" %>
+      <% else %>
+        <%= cl_image_tag @user.photo.key %>
+      <% end %>
     </div>
     <div class="show-user-info">
       <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.first_name %></p>
