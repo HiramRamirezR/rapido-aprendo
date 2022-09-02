@@ -45,9 +45,3 @@ flashcard = Flashcard.create(task: task5, content: "Globo", answer: "Respira pro
 flashcard = Flashcard.create(task: task5, content: "Lápiz", answer: "Coloca un lápiz entre tus dientes y platica con alguien más esforzándote por hablar lo más claro posible.")
 flashcard = Flashcard.create(task: task5, content: "Taquitos", answer: "Practica frente a un espejo enrollar la lengua como un taquito.")
 flashcard = Flashcard.create(task: task5, content: "Motor", answer: "Sopla aire con la boca cerrada y pon tus labios muy relajados para que al salir el aire provoquen un suave sonido como un motor.")
-
-
-# Answer.destroy_all
-# answer = Answer.create(user: user, flashcard: flashcard)
-# answer.user = user
-# answer.flashcard = flashcard
