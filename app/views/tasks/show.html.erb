@@ -1,11 +1,18 @@
-<div class="container">
-  <div class="card" style="width: 18rem;">
-  <h2>Tarea</h2>
-    <div class="card-body">
-    <h4 class="card-title">Nombre: <%= @task.title %></h3>
-    <p class="card-text">Descripción: <%= @task.details %></p>
-    <%= link_to "Comenzar flashcards", task_flashcards_path(@task), class: "btn btn-primary" %>
-    <%= link_to "Volver a las tareas", tasks_path, class: "btn btn-primary" %>
+<div class="show-tasks-container">
+  <div class="show-task">
+    <div class="show-task-title">
+      <h2><%= @task.title %></h2>
+    </div>
+    <div class="show-task-text">
+      <%= @task.details %>
+    </div>
+    <div class="show-tasks-buttons">
+      <div class="show-tasks-goback-button">
+        <%= link_to "Volver a las tareas", tasks_path, class: "task-button" %>
+      </div>
+      <div class="show-tasks-flashcards-button">
+        <%= link_to "Comenzar flashcards", task_flashcards_path(@task), class: "task-button" %>
+      </div>
     </div>
   </div>
 </div>

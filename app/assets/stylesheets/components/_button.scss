@@ -1,0 +1,13 @@
+.task-button{
+  margin-top: 30px;
+  width: 50px;
+  background-color: #F4C90E;
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  &:hover{
+    color: white;
+  }
+}

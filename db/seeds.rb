@@ -33,8 +33,20 @@ assignment6 = Assignment.create(initial: Date.today, final: Date.today, done: fa
 assignment7 = Assignment.create(initial: Date.today, final: Date.today, done: false, user: user2, task: task7)
 assignment8 = Assignment.create(initial: Date.today, final: Date.today, done: false, user: user2, task: task8)
 
+Flashcard.destroy_all
+flashcard = Flashcard.create(task: task)
+flashcard.task = task
+flashcard.save
 
 Flashcard.destroy_all
+flashcard = Flashcard.create(task: task2)
+flashcard.task = task2
+flashcard.save
+
+Answer.destroy_all
+answer = Answer.create(user: user, flashcard: flashcard)
+answer.user = user
+answer.flashcard = flashcard
 flashcard = Flashcard.create(task: task1, content: "Nutella", answer: "Unta nutella al rededor de los labios. Luego, con movimientos circulares de la lengua trata de limpiarla toda.")
 flashcard = Flashcard.create(task: task1, content: "Globo", answer: "Respira profundamente, inhala tanto arie como pueda e infla un blobo con un solo soplido.")
 flashcard = Flashcard.create(task: task1, content: "Lápiz", answer: "Coloca un lápiz entre tus dientes y platica con alguien más esforzándote por hablar lo más claro posible.")
