@@ -1,0 +1,6 @@
+<h2 class="p-0 mx-5 my-3">Flashcards</h2>
+<div class="container">
+  <% @flashcards.each do | flashcard | %>
+    <h5><%= flashcard.content %></h5>
+  <% end %>
+</div>

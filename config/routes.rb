@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'flashcards/index'
+  get '/my_flashcards', to: "flashcards#my_flashcards"
   devise_for :users
   root to: "pages#home"
   get '/dashboard', to: 'pages#dashboard', as: 'dashboard'
