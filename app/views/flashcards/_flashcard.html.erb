@@ -1,0 +1,17 @@
+<div class="card-h" style="width: 18rem;">
+  <div class="flashcard-inner" data-controller="flip" data-flip-target="flipper" data-action="click->flip#flipCard">
+		<div class="card-face card-face-front">
+      <h3 class="card-title-fc"><%= flashcard.content %></h3>
+		</div>
+		<div class="card-face card-face-back">
+			<div class="card-content">
+				<div class="card-header">
+					<img src="#" alt="" class="" />
+				</div>
+				<div class="card-body">
+					<p class="card-text-fc"><%= flashcard.answer %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
