@@ -15,13 +15,13 @@ user = User.create(first_name: "Daniel", last_name: "Santillan", therapist: "fal
 
 Task.destroy_all
 task = Task.create(title: "Pronunciacion", details: "pronunciar r")
-task = Task.create(title: "Ejercicios", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
-task = Task.create(title: "Práctica", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500")
-task = Task.create(title: "Trabajando con vocales", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500")
-task = Task.create(title: "Ejercicios con materiales", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
-task = Task.create(title: "Práctica con espejo", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
-task = Task.create(title: "Inflar un globo", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
-task = Task.create(title: "Morder un lápiz", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+task2 = Task.create(title: "Ejercicios", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+task3 = Task.create(title: "Práctica", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500")
+task4 = Task.create(title: "Trabajando con vocales", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500")
+task5 = Task.create(title: "Ejercicios con materiales", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+task6 = Task.create(title: "Práctica con espejo", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+task7 = Task.create(title: "Inflar un globo", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+task8 = Task.create(title: "Morder un lápiz", details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
 
 Assignment.destroy_all
 assignment = Assignment.new(initial: Date.today, final: Date.today, done: false)
@@ -29,10 +29,14 @@ assignment.user = user
 assignment.task = task
 assignment.save
 
-
 Flashcard.destroy_all
 flashcard = Flashcard.create(task: task)
 flashcard.task = task
+flashcard.save
+
+Flashcard.destroy_all
+flashcard = Flashcard.create(task: task2)
+flashcard.task = task2
 flashcard.save
 
 Answer.destroy_all

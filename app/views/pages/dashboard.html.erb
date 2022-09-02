@@ -72,7 +72,7 @@
                 <p><%= task.details %></p>
               </div>
               <div class="app-card-button">
-                <a href="#">Comenzar</a>
+                <%= link_to "Comenzar", task_path(task)  %>
               </div>
             </div>
           </div>

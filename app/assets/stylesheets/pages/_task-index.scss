@@ -1,0 +1,31 @@
+.task-title-index{
+  width: 80vw;
+  margin: auto;
+  h2{
+    padding: 0;
+    padding-top: 30px;
+  }
+}
+.task-index{
+  width: 80vw;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  .card{
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: #EFEEEE;
+  }
+}
+.card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
