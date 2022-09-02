@@ -1,10 +1,26 @@
 <div class="container">
-  <div class="card" style="width: 18rem;">
-  <h2>Flashcards</h2>
-    <div class="card-body">
-    <h4 class="card-title">Tarea: <%= @task.title %></h3>
-    <p class="card-text">Descripción: <%= @task.details %></p>
-    <%= link_to "Volver a la tarea", task_path(@task), class: "btn btn-primary" %>
+  <%= link_to "Volver a la tarea", task_path(@task), class: "btn btn-primary" %>
+  <label for="file">Has completado 0 de 5 flashcards</label>
+  <progress id="file" max="100" value="70"> 70% </progress>
+
+  <div class="card-h" style="width: 18rem;">
+    <div class="flashcard-inner" data-controller="flip" data-flip-target="flipper" data-action="click->flip#flipCard">
+	  		<div class="card-face card-face-front">
+          <h3 class="card-title-fc">Tarea: <%= @task.title %></h3>
+          <p class="card-text-fc">Descripción: <%= @task.details %></p>
+	  		</div>
+	  		<div class="card-face card-face-back">
+	  			<div class="card-content">
+	  				<div class="card-header">
+	  					<img src="#" alt="" class="" />
+	  					<h2>Tyler Potts</h2>
+	  				</div>
+	  				<div class="card-body">
+	  					<h3>Realiza lo siguiente</h3>
+	  					<p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</div>
     </div>
-  </div>
 </div>
