@@ -36,12 +36,12 @@ assignment8 = Assignment.create(initial: Date.today, final: Date.today, done: fa
 
 Flashcard.destroy_all
 flashcard = Flashcard.create(task: task1, content: "Nutella", answer: "Unta nutella al rededor de los labios. Luego, con movimientos circulares de la lengua trata de limpiarla toda.")
-flashcard = Flashcard.create(task: task1, content: "Globo", answer: "Respira profundamente, inhala tanto arie como pueda e infla un blobo con un solo soplido.")
+flashcard = Flashcard.create(task: task1, content: "Globo", answer: "Respira profundamente, inhala tanto aire como puedas e infla un globo con un solo soplido.")
 flashcard = Flashcard.create(task: task1, content: "Lápiz", answer: "Coloca un lápiz entre tus dientes y platica con alguien más esforzándote por hablar lo más claro posible.")
 flashcard = Flashcard.create(task: task1, content: "Taquitos", answer: "Practica frente a un espejo enrollar la lengua como un taquito.")
 flashcard = Flashcard.create(task: task1, content: "Motor", answer: "Sopla aire con la boca cerrada y pon tus labios muy relajados para que al salir el aire provoquen un suave sonido como un motor.")
 flashcard = Flashcard.create(task: task5, content: "Nutella", answer: "Unta nutella al rededor de los labios. Luego, con movimientos circulares de la lengua trata de limpiarla toda.")
-flashcard = Flashcard.create(task: task5, content: "Globo", answer: "Respira profundamente, inhala tanto arie como pueda e infla un blobo con un solo soplido.")
+flashcard = Flashcard.create(task: task5, content: "Globo", answer: "Respira profundamente, inhala tanto aire como puedas e infla un globo con un solo soplido.")
 flashcard = Flashcard.create(task: task5, content: "Lápiz", answer: "Coloca un lápiz entre tus dientes y platica con alguien más esforzándote por hablar lo más claro posible.")
 flashcard = Flashcard.create(task: task5, content: "Taquitos", answer: "Practica frente a un espejo enrollar la lengua como un taquito.")
 flashcard = Flashcard.create(task: task5, content: "Motor", answer: "Sopla aire con la boca cerrada y pon tus labios muy relajados para que al salir el aire provoquen un suave sonido como un motor.")
