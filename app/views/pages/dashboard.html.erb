@@ -3,7 +3,11 @@
     <div class="user-info">
 
       <div class="user-avatar">
-        <%= cl_image_tag current_user.photo.key, style:"width:200px;" %>
+      <% unless current_user.photo.attached? %>
+        <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",  style:"width:200px;" %>
+      <% else %>
+        <%= cl_image_tag current_user.photo.key, style:"width:200px; height:200px" %>
+      <% end %>
       </div>
       <div class="user-name">
         <h5><%= @user.first_name %> <%= @user.last_name %></h5>
