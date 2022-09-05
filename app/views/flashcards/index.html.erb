@@ -1,8 +1,8 @@
-<div class="container">
-  <label for="file">Has completado 0 de 5 flashcards</label>
-  <progress id="file" max="100" value="70"> 70% </progress>
-
-
+<div class="container" data-controller="progress">
+  <div id="divProgress" class="col-6">
+    <h5 id="tarjetasVistas" data-progress-target="label">Has revisado 0 de <%= @task.flashcards.count %> flashcards.</h5>
+    <progress id="progressBar" max="100" value="0" data-progress-target="bar"></progress>
+  </div>
   <div id="carouselExampleControls" class="carousel slide" data-bs-interval=false>
 
     <div class="carousel-inner">
@@ -13,18 +13,24 @@
         </div>
       <% end %>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+<%# El controller --> es el elemento padre %>
+<%# El target --> es el querySelector %>
+<%# El action --> es el EventListener %>
 
+      <div >
+      <p data-progress-target="number" class="d-none"><%= @task.flashcards.count %></p>
+        <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" data-progress-target="negative" data-action="click->progress#substract">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" data-progress-target="positive" data-action="click->progress#add">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
 
     </div>
-
 
   </div>
 </div>

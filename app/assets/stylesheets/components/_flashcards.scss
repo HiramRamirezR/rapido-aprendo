@@ -100,3 +100,25 @@
   z-index: 1;
   background-color: var(--morado);
 }
+
+#divProgress {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+progress {
+  margin: 0 auto;
+  width: 80%;
+  height: 20px;
+  background-color: var(--salmon);
+  accent-color: var(--morado);
+  border: none;
+}
+
+#tarjetasVistas {
+  color: var(--morado)
+}
