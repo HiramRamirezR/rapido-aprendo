@@ -7,5 +7,8 @@ import { application } from "./application"
 import FlipController from "./flip_controller"
 application.register("flip", FlipController)
 
+import ProgressController from "./progress_controller"
+application.register("progress", ProgressController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
