@@ -1,13 +1,30 @@
 <div class="container">
-  <%= link_to "Volver a la tarea", task_path(@task), class: "btn btn-primary" %>
   <label for="file">Has completado 0 de 5 flashcards</label>
   <progress id="file" max="100" value="70"> 70% </progress>
 
-  <% @task.flashcards.each do |flashcard| %>
-    <%= render "flashcard", flashcard: flashcard %>
-  <% end %>
 
-  <div class="col-12 d-flex justify-content-center">
-      <a href="#" class="btn btn-success m-3 col-2"><i class="fa-regular fa-circle-right"></i></a>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-interval=false>
+
+    <div class="carousel-inner">
+
+      <% @task.flashcards.each_with_index do |flashcard, index| %>
+        <div class="carousel-item <%= index == 0 ? 'active' : "" %>">
+          <%= render "flashcard", flashcard: flashcard %>
+        </div>
+      <% end %>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="">Next</span>
+      </button>
+
+
+    </div>
+
+
   </div>
 </div>
