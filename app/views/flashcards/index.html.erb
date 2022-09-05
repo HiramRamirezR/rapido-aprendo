@@ -3,12 +3,12 @@
   <progress id="file" max="100" value="70"> 70% </progress>
 
 
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-interval=false>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-interval=false>
 
     <div class="carousel-inner">
 
       <% @task.flashcards.each_with_index do |flashcard, index| %>
-        <div class="carousel-item <%= index == 0 ? 'active' : "" %>">
+        <div class="carousel-item w-100 <%= index == 0 ? 'active' : "" %>">
           <%= render "flashcard", flashcard: flashcard %>
         </div>
       <% end %>
@@ -19,7 +19,7 @@
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="">Next</span>
+        <span class="visually-hidden">Next</span>
       </button>
 
 
