@@ -60,99 +60,46 @@
       </div>
     </div>
   </div>
+
   <div class="todo-information">
     <div class="tasks-container">
       <div class="task-title">
         <h3>Tareas</h3>
       </div>
-      <div class="app-cards">
+      <div class="app-cards" data-controller="tasks-cards">
         <% @tasks.each do |task| %>
-          <div class="app-card">
+          <%= link_to task_path(task), class:"link-cards" do %>
+          <div class="app-card tasks-card-fondo">
             <div class="app-card-title">
               <h4><%= task.title %></h4>
             </div>
-            <div class="card-text">
-              <div class="app-card-info">
-                <p><%= task.details %></p>
-              </div>
-              <div class="app-card-button">
-                <%= link_to "Comenzar", task_path(task)  %>
-              </div>
+            <div class="app-card-info">
+              <div class="white-background"></div>
+              <p><%= task.details %></p>
             </div>
           </div>
+          <% end %>
         <% end %>
       </div>
     </div>
 
     <div class="flashcards-container">
-      <div class="flashcards-title">
-        <h4>Ultimas flashcards</h4>
+        <div class="flashcards-title">
+          <h4>Flashcards diarias</h4>
+        </div>
+      <div class="flashcards-box">
+        <div class="app-flashcards" data-controller="flashcard-color">
+          <% @flashcards.each do | flashcard | %>
+          <div class="app-flashcard flashcard-fondo">
+            <div class="app-flashcard-title">
+              <h5><%= flashcard.content %></h5>
+            </div>
+            <div class="app-flashcard-info">
+              <p><%= flashcard.answer %></p>
+            </div>
+          </div>
+          <% end %>
       </div>
-      <div class="app-flashcards">
-        <div class="app-flashcard">
-          <div class="app-flashcard-title">
-            <h5>Titulo</h5>
-          </div>
-          <div class="app-flashcard-info">
-            <ul>
-              <li>Audio</li>
-              <li>Imagen</li>
-              <li>Pregunta</li>
-            </ul>
-          </div>
-          <div class="app-flashcard-button">
-            <a href="#">Comenzar</a>
-          </div>
-        </div>
-
-        <div class="app-flashcard">
-          <div class="app-flashcard-title">
-            <h5>Titulo</h5>
-          </div>
-          <div class="app-flashcard-info">
-            <ul>
-              <li>Audio</li>
-              <li>Imagen</li>
-              <li>Pregunta</li>
-            </ul>
-          </div>
-          <div class="app-flashcard-button">
-            <a href="#">Comenzar</a>
-          </div>
-        </div>
-
-        <div class="app-flashcard">
-          <div class="app-flashcard-title">
-            <h5>Titulo</h5>
-          </div>
-          <div class="app-flashcard-info">
-            <ul>
-              <li>Audio</li>
-              <li>Imagen</li>
-              <li>Pregunta</li>
-            </ul>
-          </div>
-          <div class="app-flashcard-button">
-            <a href="#">Comenzar</a>
-          </div>
-        </div>
-
-        <div class="app-flashcard">
-          <div class="app-flashcard-title">
-            <h5>Titulo</h5>
-          </div>
-          <div class="app-flashcard-info">
-            <ul>
-              <li>Audio</li>
-              <li>Imagen</li>
-              <li>Pregunta</li>
-            </ul>
-          </div>
-          <div class="app-flashcard-button">
-            <a href="#">Comenzar</a>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
