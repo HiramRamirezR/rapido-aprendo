@@ -12,10 +12,11 @@
 }
 
 .fondo-navbar{
-  background-color: $fondo-navbar;
+  background-color: #EEEDF7;
 }
 
 .botones-navbar{
+  margin-left: -250px;
   height: 100%;
   list-style: none;
   display: flex;
@@ -23,9 +24,9 @@
     margin-top: 12px;
     padding-left: 80px;
     a{
-      color: #fff;
+      color: #000;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: normal;
       &:hover{
         color: $morado;
       }
@@ -34,4 +35,9 @@
 }
 .foto-avatar{
   margin-right: 40px;
+}
+
+.ra-logo{
+  height: 60px;
+  margin-left: 40px;
 }
