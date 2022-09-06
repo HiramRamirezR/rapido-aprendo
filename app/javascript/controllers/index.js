@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import FlashcardColorController from "./flashcard_color_controller"
+application.register("flashcard-color", FlashcardColorController)
+
 import FlipController from "./flip_controller"
 application.register("flip", FlipController)
 
@@ -12,3 +15,6 @@ application.register("progress", ProgressController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import TasksCardsController from "./tasks_cards_controller"
+application.register("tasks-cards", TasksCardsController)
