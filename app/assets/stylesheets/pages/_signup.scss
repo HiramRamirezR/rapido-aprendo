@@ -1,0 +1,26 @@
+:root {
+  --morado: #5D58C0;
+  --salmon: #f37e80;
+  --dark: #212121;
+  --light: #F3F3F3;
+}
+
+.container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    background: -webkit-linear-gradient(#5D58C0, #f37e80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+  }
+}
+
+.btn-outline-success {
+  padding: 13px;
+  color: black;
+}
