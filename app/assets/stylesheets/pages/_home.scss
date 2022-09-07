@@ -502,7 +502,7 @@ footer{
   }
   .cards-page{
     height: auto;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
     .cards-home{
       flex-wrap: nowrap;
       flex-direction: column;
@@ -516,7 +516,7 @@ footer{
       }
       .circulo-rojo{
         top: 100px;
-        left: 200px;
+        left: 150px;
       }
       .espiral-amarillo{
         top: -50px;
@@ -534,6 +534,7 @@ footer{
   .info-homepage{
     width: 80vw;
     margin: 100px auto;
+    margin-top: 0;
     flex-direction: column-reverse;
     .estrella1{
       top: 80px;
@@ -624,9 +625,25 @@ footer{
 
 @media (max-width: 576px){
   .home-page{
+    padding: 0 15px;
+    height: 1000px;
     .icon-3d-uno{
-      top: 500px;
-      left: 300px;
+      top: 400px;
+      left: 250px;
+    }
+    .icon-3d-dos{
+      transform: scale(0.4);
+      left: 0;
+      top: 150px;
+    }
+    .home-page-info{
+      height: 550px;
+      .home-page-title h1{
+        font-size: 45px;
+      }
+    }
+    .home-page-image{
+      transform: scale(0.7);
     }
   }
   .cards-page{
@@ -635,6 +652,7 @@ footer{
       .circulo-rojo{
         transform: scale(0.5);
         top: 400px;
+        left: 0;
       }
       .personaje{
         transform: scale(0.5);
@@ -658,9 +676,8 @@ footer{
       width: 100vw;
       height: 500px;
       margin: 0 auto;
-      margin-left: -50px;
+      margin-left: -60px;
       transform: scale(0.7);
-      background-color: lightblue;
       margin-top: -90px;
     }
     .home-page-info{
@@ -683,6 +700,7 @@ footer{
     }
   }
   .cards-page{
+    margin-bottom: 0;
     .cards-home{
       .circulo-rojo{
         left: 100px;
