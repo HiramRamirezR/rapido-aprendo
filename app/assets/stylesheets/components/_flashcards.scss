@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
 :root {
   --morado: #5D58C0;
   --salmon: #f37e80;
@@ -35,7 +37,7 @@
 }
 
 .card-face-front {
-  background-image: linear-gradient(to bottom right, var(--morado), var(--salmon));
+  // background-image: linear-gradient(to bottom right, var(--morado), var(--salmon));
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -66,6 +68,7 @@
   right: 0;
   bottom: 0;
   background-image: linear-gradient(to bottom left, var(--morado) 10%, var(--salmon) 115%);
+  // background: url(https://res.cloudinary.com/luda9/image/upload/v1662566431/development/1_pgztoo.png);
   z-index: -1;
   border-radius: 0px 0px 50% 0px;
 }
@@ -85,6 +88,17 @@
   text-align: center;
   width: 100%;
   padding: 10px;
+}
+
+.card-title-fc {
+  font-size: 3.5em;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 2px 2px 2px black;
+}
+
+.card-text-fc{
+  font-size: 1.5em;
 }
 
 .is-flipped {
@@ -120,5 +134,24 @@ progress {
 }
 
 #tarjetasVistas {
-  color: var(--morado)
+  // color: var(--morado)
+  background: -webkit-linear-gradient(#5D58C0, #f37e80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fc-fondo1 {
+  background: url(https://res.cloudinary.com/luda9/image/upload/v1662566431/development/1_pgztoo.png);
+}
+.fc-fondo2 {
+  background: url(https://res.cloudinary.com/luda9/image/upload/v1662566431/development/2_n1kclo.png);
+}
+.fc-fondo3 {
+  background: url(https://res.cloudinary.com/luda9/image/upload/v1662566431/development/3_pqi8in.png);
+}
+.fc-fondo4 {
+  background: url(https://res.cloudinary.com/luda9/image/upload/v1662566431/development/4_emxm9e.png);
+}
+.fc-fondo5 {
+  background: url(https://res.cloudinary.com/luda9/image/upload/v1662566431/development/5_tujumy.png);
 }

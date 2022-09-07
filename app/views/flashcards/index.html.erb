@@ -1,7 +1,7 @@
 <div class="container" data-controller="progress">
   <div id="divProgress" class="col-6">
-    <h5 id="tarjetasVistas" data-progress-target="label">Has revisado 0 de <%= @task.flashcards.count %> flashcards.</h5>
-    <progress id="progressBar" max="100" value="0" data-progress-target="bar"></progress>
+    <h5 id="tarjetasVistas" data-progress-target="label">Has revisado 1 de <%= @task.flashcards.count %> flashcards.</h5>
+    <progress id="progressBar" max="100" value="<%= 100 / @task.flashcards.count %>" data-progress-target="bar"></progress>
   </div>
   <div id="carouselExampleControls" class="carousel slide" data-bs-interval=false>
 
