@@ -1,13 +1,13 @@
 import { Controller } from "@hotwired/stimulus"
 
-let counter = 0
+let counter = 1
 
 // Connects to data-controller="flip"
 export default class extends Controller {
   static targets = ["positive", "negative", "label", "number", "bar"]
 
   substract() {
-    if (counter > 0 + 1) {
+    if (counter > 0 + 2) {
       counter--
       this.positiveTarget.classList.remove('d-none')
     } else {
