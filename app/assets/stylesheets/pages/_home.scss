@@ -147,6 +147,7 @@ h1{
 //CARDS
 .cards-home{
   position: relative;
+  height: auto;
   .circulo-rojo{
     position: absolute;
     top: -100px;
@@ -344,6 +345,7 @@ footer{
 @media (max-width: 992px) {
   .home-page{
     height: 1000px;
+    padding: 0 15px;
     .icon-3d-dos{
       top: 100px;
     }
@@ -356,7 +358,7 @@ footer{
     }
   }
   .cards-page{
-    height: 850px;
+    height: auto;
     margin-top: 50px;
     .cards-title{
       h4{
@@ -370,7 +372,7 @@ footer{
       font-size: 25px;
     }
     .cards-home{
-      height: 400px;
+      height: auto;
       padding: 25px 0;
       .circulo-rojo{
         top: -100px;
@@ -389,6 +391,7 @@ footer{
     }
   }
   .info-homepage{
+    height: auto;
     .kid-image {
       img{
         width: 250px;
@@ -668,17 +671,20 @@ footer{
 
 @media (max-width: 478px){
   .home-page{
-    height: 1200px;
+    height: 1100px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: start;
+    .icon-3d-uno{
+      display: none;
+    }
     .home-page-image{
-      width: 100vw;
+      width: 100%;
       height: 500px;
       margin: 0 auto;
-      margin-left: -60px;
-      transform: scale(0.7);
+      transform: scale(0.6);
       margin-top: -90px;
+      margin-bottom: -50px;
     }
     .home-page-info{
       height: 700px;
@@ -703,7 +709,7 @@ footer{
     margin-bottom: 0;
     .cards-home{
       .circulo-rojo{
-        left: 100px;
+        left: 50px;
       }
     }
   }
@@ -748,6 +754,13 @@ footer{
         font-size: 20px;
       }
     }
+    .home-page-image{
+      margin-left: 0;
+      .cuadricula{
+        top: 50px;
+        left: 0;
+      }
+    }
     .icon-3d-uno{
       transform: scale(0.4);
       top: 450px;
@@ -755,12 +768,8 @@ footer{
     }
     .icon-3d-dos{
       transform: scale(0.4);
-      left: 0;
-      top: 300px;
-    }
-    .home-page-image{
-      margin-left: -20px;
-      transform: scale(0.6);
+      left: -40px;
+      top: 250px;
     }
     .home-page-info{
       .home-page-title {
@@ -777,11 +786,29 @@ footer{
   .cards-page{
     .cards-home{
       .circulo-rojo{
-        left: 50px;
+        left: 20px;
       }
       .espiral-amarillo{
         top: -50px;
         right: 250px;
+      }
+    }
+  }
+}
+
+//MEDIA QUERYS 361 ----------
+@media (max-width: 361px){
+  .cards-page{
+    .cards-home{
+      .personaje{
+        transform: scale(0.3);
+      }
+    }
+  }
+  .info-homepage{
+    .kid-image{
+      img{
+        width: 300px;
       }
     }
   }
