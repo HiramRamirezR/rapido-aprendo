@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   root to: "pages#home"
   get '/dashboard', to: 'pages#dashboard', as: 'dashboard'
 
-  resources :tasks, only: %i[index show] do
+  resources :tasks, only: %i[index show new create] do
     resources :flashcards, only: :index
-    resources :assignment, only: :create
+    resources :assignment, only: %i[new create]
   end
   resources :users, only: :show
 end
