@@ -70,6 +70,7 @@ h1{
     }
     .home-page-subtitle{
       width: 85%;
+      z-index: 2;
       p{
         font-size: 20px;
       }
@@ -83,6 +84,7 @@ h1{
     width: 45%;
     padding-top: 60px;
     position: relative;
+    margin-left: 50px;
     .cuadricula{
       position: absolute;
       bottom: 20;
@@ -233,39 +235,34 @@ footer{
   background-color: #EEEDF7;
   height: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  .footer-titles {
-    width: 80%;
+  padding-bottom: 50px;
+  .rapido-aprendo{
+    width: 50%;
     display: flex;
-    justify-content: space-between;
-    margin: 30px auto;
-    h3{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    padding-left: 90px;
+    .rapido-aprendo-title{
+      padding: 20px 0;
       color: $morado;
     }
-    .creadores-title{
-      width: 50%;
-      text-align: center;
+    .contactanos a{
+      color: #000;
     }
   }
-  .footer-text{
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 30px;
-
-    .footer-info{
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-    }
-    .footer-rights{
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
+  .creadores{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    padding-bottom: 0;
+    .creadores-title{
+      padding: 15px 0;
+      color: $morado;
     }
     .creador{
       display: grid;
@@ -274,6 +271,7 @@ footer{
       row-gap: 0;
       column-gap: 30px;
       h3{
+        font-size: 25px;
         margin-bottom: 0;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -282,12 +280,12 @@ footer{
         margin-left: 20px;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-        margin-top: -20px;
+        margin-top: -10px;
       }
       .favicons{
         grid-column: 2 / 3;
         grid-row: 1 / 2;
-        font-size: 35px;
+        font-size: 25px;
         a{
           color: #000;
           transition: color 0.3s;
@@ -296,6 +294,537 @@ footer{
           }
         }
       }
+    }
+  }
+}
+
+
+//MEDIA QUERYS 1200 ----------
+
+@media (max-width: 1200px) {
+  .home-page{
+    display: block;
+    height: 1000px;
+    .icon-3d-dos{
+      top: 100px;
+    }
+    .icon-3d-uno{
+      transform: scale(0.5);
+      top: 220px;
+      left: 800px;
+    }
+    .home-page-info{
+      height: 400px;
+      width: 100%;
+      .home-page-subtitle{
+        width: 100%;
+        p{
+          font-size: 25px;
+        }
+      }
+      .registrarse{
+        font-size: 20px;
+      }
+    }
+    .home-page-image{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-left: 0;
+        .cuadricula{
+          bottom: 20;
+          right: 90px;
+        }
+    }
+  }
+}
+
+//MEDIA QUERYS 992 ----------
+
+@media (max-width: 992px) {
+  .home-page{
+    height: 1000px;
+    .icon-3d-dos{
+      top: 100px;
+    }
+    .icon-3d-uno{
+      top: 250px;
+      left: 550px;
+    }
+    .home-page-info{
+      height: 450px;
+    }
+  }
+  .cards-page{
+    height: 850px;
+    margin-top: 50px;
+    .cards-title{
+      h4{
+        font-size: 25px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    .cards-subtitle p{
+      font-size: 25px;
+    }
+    .cards-home{
+      height: 400px;
+      padding: 25px 0;
+      .circulo-rojo{
+        top: -100px;
+        left: 100px;
+      }
+      .espiral-amarillo{
+        top: 250px;
+        right: 50px;
+        transform: scale(0.5);
+      }
+      .personaje{
+        bottom: -200px;
+        left: -100px;
+        transform: scale(0.5);
+      }
+    }
+  }
+  .info-homepage{
+    .kid-image {
+      img{
+        width: 250px;
+      }
+    }
+  }
+  footer{
+    .footer-text{
+      .creador{
+        p{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+//MEDIA QUERYS 768 ----------
+
+@media (max-width: 768px) {
+  .home-page{
+    height: 1200px;
+    .icon-3d-uno{
+      top: 400px;
+      left: 400px;
+    }
+    .home-page-info{
+      height: 650px;
+    }
+  }
+  .cards-page{
+    height: 900px;
+    .cards-title{
+      h4{
+        font-size: 30px;
+      }
+    }
+    .cards-home{
+      flex-wrap: wrap;
+      margin: 20px 0;
+      padding: 25px 0;
+      .circulo-rojo{
+        top: -100px;
+        left: 100px;
+      }
+      .espiral-amarillo{
+        top: 250px;
+        right: 50px;
+        transform: scale(0.5);
+      }
+      .personaje{
+        bottom: -200px;
+        left: -100px;
+        transform: scale(0.5);
+      }
+    }
+  }
+  footer{
+    .footer-text{
+      .creador{
+        p{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+//MEDIA QUERYS 635 ----------
+
+@media (max-width: 635px){
+  .home-page{
+    height: 1300px;
+    padding: 0 60px;
+    .icon-3d-uno{
+      top: 500px;
+      left: 360px;
+    }
+    .icon-3d-dos{
+      transform: scale(0.4);
+      left: 0;
+      top: 380px;
+    }
+    .home-page-info{
+      height: 750px;
+      .home-page-title h1{
+        text-align: center;
+      }
+      .home-page-subtitle p{
+        text-align: center;
+      }
+      .registrarse{
+        font-size: 25px;
+        font-weight: normal;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .home-page-image{
+    margin-top: 30px;
+    transform: scale(0.8);
+    margin-left: 0;
+  }
+  .barra-insignias{
+    .insignias{
+      img{
+        height: 60px;
+      }
+    }
+  }
+  .cards-page{
+    height: auto;
+    margin-bottom: 300px;
+    .cards-home{
+      flex-wrap: nowrap;
+      flex-direction: column;
+      height: auto;
+      .card-home{
+        width: 70%;
+        margin: 30px 0;
+        p{
+          font-size: 20px;
+        }
+      }
+      .circulo-rojo{
+        top: 100px;
+        left: 200px;
+      }
+      .espiral-amarillo{
+        top: -50px;
+        right: 400px;
+        transform: scale(0.5);
+        z-index: 1;
+      }
+      .personaje{
+        bottom: -100px;
+        left: -100px;
+        transform: scale(0.8);
+      }
+    }
+  }
+  .info-homepage{
+    width: 80vw;
+    margin: 100px auto;
+    flex-direction: column-reverse;
+    .estrella1{
+      top: 80px;
+      right: 30px;
+      }
+      .estrella2{
+      bottom: 40%;
+      left: 50px;
+      z-index: 1;
+      }
+      .estrella3{
+      bottom: 50px;
+      left: 30%;
+      }
+    .ra-info{
+      width: 100%;
+      margin-left: 0;
+      .ra-info-container{
+        .ra-info-title{
+          font-size: 25px;
+        }
+      }
+    }
+    .kid-image {
+      justify-content: center;
+      margin-left: 0;
+      margin-bottom: 100px;
+      img{
+        width: 350px;
+      }
+    }
+  }
+  footer{
+    flex-direction: column;
+    .rapido-aprendo{
+      width: 80vw;
+      padding: 0;
+      margin: 0 auto;
+      .rapido-aprendo-title{
+        font-size: 35px;
+      }
+      .footer-text{
+        .footer-info{
+          font-size: 20px;
+          text-align: center;
+        }
+        .footer-rights{
+          font-size: 20px;
+          text-align: center;
+        }
+        .contactanos{
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+    .creadores{
+      width: 80vw;
+      margin: 0 auto;
+      .creadores-title{
+        font-size: 35px;
+        text-align: center;
+      }
+      .creador{
+        margin: 0 auto;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        .datos-creador{
+          h3{
+            font-size: 30px;
+          }
+          p{
+            font-size: 20px;
+          }
+        }
+        .favicons{
+          font-size: 40px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+//MEDIA QUERYS 576 ----------
+
+@media (max-width: 576px){
+  .home-page{
+    .icon-3d-uno{
+      top: 500px;
+      left: 300px;
+    }
+  }
+  .cards-page{
+    .cards-home{
+      margin-bottom: 0;
+      .circulo-rojo{
+        transform: scale(0.5);
+        top: 400px;
+      }
+      .personaje{
+        transform: scale(0.5);
+      }
+    }
+  }
+  .info-homepage{
+    margin-top: -50px;
+  }
+}
+
+//MEDIA QUERYS 478 ----------
+
+@media (max-width: 478px){
+  .home-page{
+    height: 1200px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    .home-page-image{
+      width: 100vw;
+      height: 500px;
+      margin: 0 auto;
+      margin-left: -50px;
+      transform: scale(0.7);
+      background-color: lightblue;
+      margin-top: -90px;
+    }
+    .home-page-info{
+      height: 700px;
+      .home-page-title h1{
+        font-size: 50px;
+      }
+      .home-page-subtitle p{
+        text-align: center;
+      }
+    }
+  }
+  .barra-insignias{
+    height: 120px;
+    .insignias{
+      justify-content: space-between;
+      img{
+        height: 40px;
+      }
+    }
+  }
+  .cards-page{
+    .cards-home{
+      .circulo-rojo{
+        left: 100px;
+      }
+    }
+  }
+  .cards-page{
+    .cards-header{
+      .cards-title{
+        width: 90%;
+        h4{
+          font-size: 25px;
+        }
+      }
+      .cards-subtitle p{
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+      }
+    }
+  }
+  .cards-page{
+    height: 1600px;
+    .cards-home{
+      margin: 0;
+      padding: 0;
+      .espiral-amarillo{
+        top: -50px;
+        right: 300px;
+      }
+    }
+  }
+}
+
+//MEDIA QUERYS 400 ----------
+
+@media (max-width: 400px){
+  .home-page{
+    padding: 0 20px;
+    height: 1000px;
+    .home-page-info{
+      height: 600px;
+      margin-bottom: 50px;
+      .registrarse{
+        font-size: 20px;
+      }
+    }
+    .icon-3d-uno{
+      transform: scale(0.4);
+      top: 450px;
+      left: 150px;
+    }
+    .icon-3d-dos{
+      transform: scale(0.4);
+      left: 0;
+      top: 300px;
+    }
+    .home-page-image{
+      margin-left: -20px;
+      transform: scale(0.6);
+    }
+    .home-page-info{
+      .home-page-title {
+        width: 100%;
+        h1{
+          font-size: 40px;
+        }
+      }
+      .home-page-subtitle p{
+        font-size: 20px;
+      }
+    }
+  }
+  .cards-page{
+    .cards-home{
+      .circulo-rojo{
+        left: 50px;
+      }
+      .espiral-amarillo{
+        top: -50px;
+        right: 250px;
+      }
+    }
+  }
+}
+
+//MEDIA QUERYS 350 ----------
+
+@media (max-width: 350px){
+  .home-page{
+    padding: 0 20px;
+    height: 1000px;
+    .home-page-info{
+      height: 600px;
+      margin-bottom: 50px;
+      .registrarse{
+        font-size: 20px;
+      }
+    }
+    .icon-3d-uno{
+      transform: scale(0.4);
+      top: 450px;
+      left: 150px;
+    }
+    .icon-3d-dos{
+      transform: scale(0.4);
+      left: 0;
+      top: 300px;
+    }
+    .home-page-image{
+      margin-left: -20px;
+      transform: scale(0.6);
+    }
+    .home-page-info{
+      .home-page-title {
+        width: 100%;
+        h1{
+          font-size: 40px;
+        }
+      }
+      .home-page-subtitle p{
+        font-size: 20px;
+      }
+    }
+  }
+  .cards-page{
+    margin-bottom: 50px;
+    .cards-home{
+      .circulo-rojo{
+        left: 0;
+      }
+      .espiral-amarillo{
+        top: -50px;
+        right: 250px;
+      }
+    }
+  }
+  .info-homepage{
+    margin-top: 50px;
+    height: auto;
+    .kid-image {
+      transform: scale(0.7);
     }
   }
 }
