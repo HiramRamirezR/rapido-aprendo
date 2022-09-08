@@ -38,6 +38,25 @@
 }
 
 .ra-logo{
-  height: 60px;
+  height: 45px;
   margin-left: 40px;
+  border-radius: 5px;
+}
+
+//MEDIA QUERYS 480 ----------
+
+@media (max-width: 480px){
+  .botones-navbar{
+    li{
+      padding-left: 50px;
+      margin-top: 70px;
+    }
+  }
+  .ra-logo{
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+  .navbar-toggler{
+    margin-bottom: 50px;
+  }
 }
