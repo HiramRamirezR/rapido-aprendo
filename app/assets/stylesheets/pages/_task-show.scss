@@ -1,31 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
 .show-tasks-container{
   width: 80vw;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 25px;
   height: auto;
+  .video-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    video {
+      max-width: 80%;
+      margin-bottom: 40px;
+    }
+  }
   .show-task{
     width: 80%;
     margin: auto;
     height: auto;
-    background-color: #fefbf1;
-    border: 1px solid #000;
+    background-color: #A9A7D7;
     border-radius: 13px;
-    padding: 20px;
-    .show-task-title{
-      h2{
-        padding: 0;
-      }
-    }
-    .show-task-text{
-      padding-left: 20px;
-      height: auto;
-    }
+    margin-bottom: 40px;
+  }
+  .show-task-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    height: auto;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 20px;
+  }
     .show-tasks-buttons{
       width: 100%;
       display: flex;
-      justify-content: space-between;
-      padding: 30px 20px;
-      padding-bottom: 10px;
+      justify-content: space-around;
+      height: 50px;
     }
-  }
+}
+
+.show-task-title {
+  color: white;
+  margin: 20px;
+  padding-top: 20px;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.logo-leyendo {
+  width: 40px;
 }
