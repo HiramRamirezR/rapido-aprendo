@@ -1,9 +1,10 @@
 <div class="task-title-index">
   <h2>Tareas</h2>
 </div>
-<div class="task-index">
+<div class="task-index" data-controller="task-color-show">
+
   <% @tasks.each do |task| %>
-      <div class="card" style="width: 18rem;">
+      <div class="card task-color-show" style="width: 18rem;">
         <div class="card-body">
           <h4 class="card-title"><%= task.title %></h3>
           <p class="card-text"><%= task.details %></p>
