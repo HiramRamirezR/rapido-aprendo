@@ -18,8 +18,14 @@
     flex-grow: 1;
     margin: 10px;
     border-radius: 10px;
-    border: 1px solid #000;
-    background-color: #EFEEEE;
+    border: none;
+    display: block;
+    width: 100%;
+  }
+  .card-body{
+    .card-title{
+      color: #fff;
+    }
   }
 }
 .card-text{
@@ -28,4 +34,20 @@
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+}
+
+.color1{
+  background-color: #F8DF6E;
+}
+
+.color2{
+  background-color: #A9A7D7;
+}
+
+.color3{
+  background-color: #F47F80;
+}
+
+.color4{
+  background-color: #00D598;
 }

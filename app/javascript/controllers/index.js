@@ -10,11 +10,14 @@ application.register("flashcard-color", FlashcardColorController)
 import FlipController from "./flip_controller"
 application.register("flip", FlipController)
 
+import HelloController from "./hello_controller"
+application.register("hello", HelloController)
+
 import ProgressController from "./progress_controller"
 application.register("progress", ProgressController)
 
-import HelloController from "./hello_controller"
-application.register("hello", HelloController)
+import TaskColorShowController from "./task_color_show_controller"
+application.register("task-color-show", TaskColorShowController)
 
 import TasksCardsController from "./tasks_cards_controller"
 application.register("tasks-cards", TasksCardsController)
