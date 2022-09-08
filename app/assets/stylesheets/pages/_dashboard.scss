@@ -7,10 +7,9 @@
 .user-container{
   width: 30%;
   height: 640px;
-  background-color: #fff3f2;
+  background-color: #F8DF6E;
   padding: 30px;
-  border: 1px solid #000;
-  border-radius: 13px;
+  border-radius: 30px;
   margin-right: 45px;
   .user-info{
     width: 100%;
@@ -19,13 +18,15 @@
       justify-content: center;
       img{
         border-radius: 50%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: 8px solid #fff;
       }
     }
     .user-name{
       text-align: center;
       margin: 20px 0;
-      font-weight: bold;
+      h5{
+        font-weight: bold;
+      }
     }
     .doctor p{
       text-align: center;
@@ -42,61 +43,13 @@
       width: 100%;
       text-align: center;
     }
-    .user-chart{
-      padding: 0 20px;
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-      height: 195px;
-      .caja{
-        height: 20px;
-        width: 20px;
-        margin: 10px;
-        border: 1px solid black;
-      }
-      .caja.lunes{
-        background-color: #72ae9a;
-      }
-      .lunes.letra{
-        background-color: #d9ece7;
-      }
-      .caja.martes{
-        background-color: #fbe486;
-      }
-      .martes.letra{
-        background-color: #fef6dc;
-      }
-      .caja.miercoles{
-        background-color: #f79597;
-      }
-      .miercoles.letra{
-        background-color: #fbdfdf;
-      }
-      .caja.jueves{
-        background-color: #aeacdf;
-      }
-      .jueves.letra{
-        background-color: #e6e6f6;
-      }
-      .caja.viernes{
-        background-color: #b8d3ff;
-      }
-      .viernes.letra{
-        background-color: #e8f2fe;
-      }
-      .letra{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
   }
 }
 
 .todo-information{
-  width: 100%;
+  width: 70%;
   .tasks-container{
-    height: 350px;
+    height: auto;
     width: 100%;
     .app-cards{
       display: flex;
@@ -104,10 +57,10 @@
       align-items: center;
       padding: 15px;
       height: 310px;
-      width: 100%;
+      width: auto;
       .app-card{
         height: 300px;
-        max-width: 100%;
+        width: 100%;
         border-radius: 13px;
         padding: 20px;
         background-size: 100% 100%;
@@ -158,8 +111,9 @@
   }
   .flashcards-container{
     height: 290px;
+    width: 100%;
     .flashcards-box{
-      width: 930px;
+      width: auto;
       height: 235px;
       margin-left: 30px;
       border-radius: 20px;
@@ -252,4 +206,199 @@
 
 .color4{
   background-color: #00D598;
+}
+
+//MEDIA QUERYS 1470 ----------
+
+@media (max-width: 1470px){
+  .todo-information{
+    .tasks-container{
+      .app-cards{
+        .app-card{
+          .app-card-title{
+            h4{
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//MEDIA QUERYS 1200 ----------
+
+@media (max-width: 1200px){
+  .user-container{
+    width: 25%;
+  }
+  .todo-information{
+    width: 75%;
+    .tasks-container{
+      .app-cards{
+        .app-card{
+          .app-card-title{
+            h4{
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//MEDIA QUERYS 1100 ----------
+
+@media (max-width: 1100px){
+  .dashboard-page{
+    height: auto;
+    .user-container{
+      position: sticky;
+      top: 50px;
+    }
+    .todo-information{
+      width: auto;
+      height: auto;
+      .tasks-container{
+        height: auto;
+        width: auto;
+        .app-cards{
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          flex-grow: 1;
+          align-items: start;
+          justify-content: center;
+          .app-card{
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+          }
+        }
+      }
+    }
+    .flashcards-container{
+      height: auto;
+      .flashcards-box{
+        height: auto;
+      }
+      .app-flashcards{
+        flex-wrap: wrap;
+        flex-grow: 1;
+        .app-flashcard{
+          margin: 15px;
+        }
+      }
+    }
+  }
+}
+
+//MEDIA QUERYS 850 ----------
+
+@media (max-width: 850px){
+  .dashboard-page{
+    flex-direction: column;
+    padding: 0 20px;
+    width: 100vw;
+    .user-container{
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      height: auto;
+      .user-name{
+        h5{
+          font-size: 30px;
+        }
+      }
+      .doctor{
+        font-size: 20px;
+      }
+    }
+    .todo-information{
+      margin-top: 100px;
+      .tasks-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .app-cards{
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+        }
+        .task-title{
+          h3{
+            font-size: 30px;
+            text-align: center;
+          }
+        }
+      }
+      .flashcards-container{
+        .flashcards-title{
+          h4{
+            font-size: 30px;
+            text-align: center;
+          }
+        }
+        .flashcards-box{
+          .app-flashcards{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//MEDIA QUERYS 420 ----------
+
+@media (max-width: 420px){
+  .dashboard-page{
+    margin-bottom: 50px;
+    .todo-information{
+      .tasks-container{
+        .app-cards{
+          .app-card{
+            width: 300px;
+          }
+        }
+      }
+    }
+    .flashcards-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .flashcards-box{
+        margin-left: 0px;
+      }
+      .app-flashcards{
+        margin-left: -15px;
+        // background-color: blue;
+      }
+    }
+  }
+}
+
+//MEDIA QUERYS 380 ----------
+
+@media (max-width: 380px){
+  .dashboard-page{
+    margin-bottom: 50px;
+    .todo-information{
+      .tasks-container{
+        .app-cards{
+          .app-card{
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
 }
