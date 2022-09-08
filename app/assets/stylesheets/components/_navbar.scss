@@ -60,3 +60,39 @@
     margin-bottom: 50px;
   }
 }
+
+//MEDIA QUERYS 415 ----------
+
+@media (max-width: 415px){
+  .botones-navbar{
+    li{
+      padding-left: 40px;
+      margin-top: 70px;
+    }
+  }
+  .ra-logo{
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+  .navbar-toggler{
+    margin-bottom: 50px;
+  }
+}
+
+//MEDIA QUERYS 390 ----------
+
+@media (max-width: 390px){
+  .botones-navbar{
+    li{
+      padding-left: 30px;
+      margin-top: 70px;
+    }
+  }
+  .ra-logo{
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+  .navbar-toggler{
+    margin-bottom: 50px;
+  }
+}
