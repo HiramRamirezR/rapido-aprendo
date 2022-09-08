@@ -1,22 +1,27 @@
 <div class="show-tasks-container">
   <div class="show-task">
     <div class="show-task-title">
-      <h2><%= @task.title %></h2>
+      <%= @task.title %>
+      <div>
+        <img class="logo-leyendo" src="https://res.cloudinary.com/luda9/image/upload/v1662671032/development/logoLeyendo_tcgbc9.gif" alt="">
+      </div>
     </div>
     <div class="show-task-text my-4">
       <%= @task.details %>
     </div>
     <div>
+    <div class="video-div">
       <video width="100%" controls>
-        <source src="https://res.cloudinary.com/luda9/video/upload/v1662590669/development/RapidoAprendo_tusbje.mp4" type="video/mp4">
+        <source src="<%= @task.video %>" type="video/mp4">
       </video>
+    </div>
     </div>
     <div class="show-tasks-buttons">
       <div class="show-tasks-goback-button">
         <%= link_to "Dashboard", dashboard_path, class: "task-button" %>
       </div>
       <div class="show-tasks-flashcards-button">
-        <%= link_to "Comenzar flashcards", task_flashcards_path(@task), class: "task-button" %>
+        <%= link_to "Flashcards", task_flashcards_path(@task), class: "task-button" %>
       </div>
     </div>
   </div>
