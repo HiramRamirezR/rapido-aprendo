@@ -31,6 +31,33 @@
     .doctor p{
       text-align: center;
     }
+    .racha{
+      height: 280px;
+      background-color: #FDE98F;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .racha-img{
+        img{
+          width: 180px;
+        }
+      }
+      .racha-title{
+        color: $morado;
+        font-weight: bold;
+      }
+      .racha-botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        a{
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
   }
 
   .user-dashboard{
@@ -128,31 +155,34 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      .app-flashcard{
-        width: 170px;
-        height: 185px;
-        padding: 20px;
-        border-radius: 10px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        transition: all 0.5s;
-        &:hover{
-          transform: scale(1.1) rotate(5deg);
-        }
-        .app-flashcard-title h5{
-          font-family: 'Heebo', sans-serif;
-          font-size: 25px;
-          color: #fff;
-        }
-        .app-flashcard-info p{
-          font-size: 14px;
-          color: #616161;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-line-clamp: 5;
-          -webkit-box-orient: vertical;
+      a{
+        text-decoration: none;
+        .app-flashcard{
+          width: 170px;
+          height: 185px;
+          padding: 20px;
+          border-radius: 10px;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(6, 1fr);
+          transition: all 0.5s;
+          &:hover{
+            transform: scale(1.1) rotate(5deg);
+          }
+          .app-flashcard-title h5{
+            font-family: 'Heebo', sans-serif;
+            font-size: 25px;
+            color: #fff;
+          }
+          .app-flashcard-info p{
+            font-size: 14px;
+            color: #616161;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+          }
         }
       }
     }

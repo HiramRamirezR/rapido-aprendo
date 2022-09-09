@@ -11,11 +11,11 @@
     }
   }
     .my-flashcards{
-      width: 80%;
+      width: 50%;
       height: auto;
       display: flex;
       flex-wrap: wrap;
-      a{
+      .anchor{
         width: 170px;
         height: 185px;
         display: flex;

@@ -5,6 +5,6 @@ class FlashcardsController < ApplicationController
   end
 
   def my_flashcards
-    @flashcards = Flashcard.all.select { |f| f.task.users.include?(current_user) }
+    @flashcards = Flashcard.all.select { |f| f.task.users.include?(current_user) }.first(9)
   end
 end

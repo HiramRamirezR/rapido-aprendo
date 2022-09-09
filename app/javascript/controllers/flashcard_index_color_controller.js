@@ -3,7 +3,7 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="flashcard-index-color"
 export default class extends Controller {
   connect() {
-    const colores = ["color1", "color2", "color3", "color4", "color5", "color6"];
+    const colores = ["color1", "color2", "color3", "color4", "color5"];
     const flashcards = document.querySelectorAll(".my-flashcard")
 
     flashcards.forEach((flashcard, index) => {

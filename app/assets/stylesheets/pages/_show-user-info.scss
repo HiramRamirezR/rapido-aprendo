@@ -3,24 +3,29 @@ h2{
   display: block;
 }
 .show-user-page{
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   padding: 0 25%;
   margin-top: 70px;
-  .show-avatar{
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    img{
-      height: 100%;
-    }
-  }
-  .show-user-info{
+  .show-user-box{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    background-color: $fondo-morado;
+    padding: 30px;
+    border-radius: 20px;
+    .show-avatar{
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      img{
+        height: 100%;
+      }
+    }
+    .show-user-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }

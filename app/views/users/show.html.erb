@@ -1,16 +1,19 @@
 <h2 class="mt-4">Tus datos</h2>
 <div class="show-user-page">
-    <div class="show-avatar">
-      <% unless current_user.photo.attached? %>
-        <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" %>
-      <% else %>
-        <%= cl_image_tag @user.photo.key %>
-      <% end %>
+    <div class="show-user-box">
+      <div class="show-avatar">
+        <% unless current_user.photo.attached? %>
+          <%= image_tag "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" %>
+        <% else %>
+          <%= cl_image_tag @user.photo.key %>
+        <% end %>
+      </div>
+      <div class="show-user-info">
+        <h5>Nombre</h5>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.first_name %> <%= @user.last_name %></p>
+        <h5>Correo</h5>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.email %></p><br>
+        <%= link_to "Editar información", edit_user_registration_path, class:"boton entrar" %>
+      </div>
     </div>
-    <div class="show-user-info">
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.first_name %></p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.last_name %></p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;<%= @user.email %></p><br>
-    <%= link_to "Editar información", edit_user_registration_path, class:"boton entrar" %>
-  </div>
 </div>

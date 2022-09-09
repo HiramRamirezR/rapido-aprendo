@@ -4,7 +4,7 @@
   </div>
     <div class="my-flashcards" data-controller="flashcard-index-color">
       <% @flashcards.each do | flashcard | %>
-  <%= link_to tasks_path do %>
+      <div class="anchor">
         <div class="my-flashcard">
           <div class="my-flashcard-title">
             <h5><%= flashcard.content %></h5>
@@ -13,7 +13,7 @@
             <p><%= flashcard.answer %></p>
           </div>
         </div>
-      <% end %>
+      </div>
   <% end %>
     </div>
 </div>

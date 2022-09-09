@@ -15,6 +15,17 @@
       <div class="doctor">
         <p>Doctor: Angel Ramirez Escobedo</p>
       </div>
+      <div class="racha">
+        <div class="racha-img">
+          <img src="https://res.cloudinary.com/luda9/image/upload/v1662752745/development/calendar_2_yd79lt.png" alt="">
+        </div>
+        <div class="racha-title">
+          <p>12 días de racha</p>
+        </div>
+        <div class="racha-botones">
+          <%= link_to "Mi cuenta", user_path(current_user) %>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -48,6 +59,7 @@
       <div class="flashcards-box">
         <div class="app-flashcards" data-controller="flashcard-color">
           <% @flashcards.each do | flashcard | %>
+          <%= link_to my_flashcards_path do %>
           <div class="app-flashcard flashcard-fondo">
             <div class="app-flashcard-title">
               <h5><%= flashcard.content %></h5>
@@ -56,6 +68,7 @@
               <p><%= flashcard.answer %></p>
             </div>
           </div>
+          <% end %>
           <% end %>
       </div>
       </div>
