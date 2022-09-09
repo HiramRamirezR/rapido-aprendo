@@ -1,6 +1,8 @@
 <div class="container" data-controller="progress">
+  <div id="instruccion">
+    <p>Has click sobre la tarjeta.</p>
+  </div>
   <div id="divProgress" class="col-6">
-    <h5 id="tarjetasVistas" data-progress-target="label">Has revisado 1 de <%= @task.flashcards.count %> flashcards.</h5>
     <progress id="progressBar" max="100" value="<%= 100 / @task.flashcards.count %>" data-progress-target="bar"></progress>
   </div>
   <div id="carouselExampleControls" class="carousel slide" data-bs-interval=false>
@@ -31,6 +33,19 @@
       </div>
 
     </div>
-
+  </div>
+  <div id="retroalimentacion">
+    <span><i class="fa-regular fa-circle-check"></i></span>
+    <h5 id="tarjetasVistas" data-progress-target="label"> Has revisado 1 de <%= @task.flashcards.count %> flashcards.</h5>
+  </div>
+</div>
+<div id="barraMorada">
+  <div>
+    <a href="mailto:contacto@rapidoaprendo.me?subject=Reportar un error">
+      <span>
+        <i class="fa-regular fa-flag"></i>
+      </span>
+      <p>Reportar un error. </p>
+    </a>
   </div>
 </div>
