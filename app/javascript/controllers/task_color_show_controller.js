@@ -3,7 +3,7 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="task-color-show"
 export default class extends Controller {
   connect() {
-    const colores = ["color1", "color2", "color3", "color4"];
+    const colores = ["color1", "color2", "color3", "color4", "color5", "color6"];
     const tasks = document.querySelectorAll(".task-color-show")
 
     tasks.forEach((task, index) => {

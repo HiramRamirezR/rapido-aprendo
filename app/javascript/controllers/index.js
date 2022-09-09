@@ -7,6 +7,9 @@ import { application } from "./application"
 import FlashcardColorController from "./flashcard_color_controller"
 application.register("flashcard-color", FlashcardColorController)
 
+import FlashcardIndexColorController from "./flashcard_index_color_controller"
+application.register("flashcard-index-color", FlashcardIndexColorController)
+
 import FlipController from "./flip_controller"
 application.register("flip", FlipController)
 

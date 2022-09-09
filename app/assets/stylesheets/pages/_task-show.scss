@@ -6,31 +6,37 @@
   margin-top: 25px;
   height: auto;
   margin-bottom: 50px;
-  .video-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    video {
-      max-width: 80%;
-      margin-bottom: 40px;
-    }
-  }
   .show-task{
     width: 80%;
     margin: auto;
     height: auto;
-    background-color: #A9A7D7;
+    padding-bottom: 50px;
+    background: url(https://res.cloudinary.com/luda9/image/upload/v1662566431/development/5_tujumy.png);
+    background-size: 100% 100%;
     border-radius: 13px;
     margin-bottom: 40px;
+    .video-div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 80%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      video{
+        height: 400px;
+      }
+    }
   }
   .show-task-text{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     height: auto;
+    width: 80%;
     text-align: center;
-    font-size: 1.5em;
-    color: white;
+    font-size: 20px;
+    color: #000;
+    margin: 0 auto;
     margin-bottom: 20px;
   }
     .show-tasks-buttons{
@@ -38,6 +44,9 @@
       display: flex;
       justify-content: space-around;
       height: 50px;
+      a{
+        background-color: $morado;
+      }
     }
 }
 
@@ -56,40 +65,16 @@
 }
 
 
-//MEDIA QUERYS 616 ----------
+//MEDIA QUERYS 550 ----------
 
-@media (max-width: 616px){
-  .show-tasks-buttons{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .show-tasks-goback-button{
-      margin-bottom: 20px;
-      a{
-        padding: 9px 88px;
-      }
-    }
-    .show-tasks-flashcards-button{
-      margin-bottom: 20px;
-      a{
-        padding: 9px 50px;
-      }
-    }
-  }
-}
-
-//MEDIA QUERYS 516 ----------
-
-@media (max-width: 516px){
-  .show-tasks-buttons{
-    .show-tasks-goback-button{
-      a{
-        padding: 9px 58px;
-      }
-    }
-    .show-tasks-flashcards-button{
-      a{
-        padding: 9px 20px;
+@media (max-width: 550px){
+  .show-tasks-container{
+    width: 90vw;
+    .show-task{
+      .video-div{
+        video{
+          height: 250px;
+        }
       }
     }
   }
@@ -98,15 +83,13 @@
 //MEDIA QUERYS 430 ----------
 
 @media (max-width: 430px){
-  .show-tasks-buttons{
-    .show-tasks-goback-button{
-      a{
-        padding: 9px 10px;
-      }
-    }
-    .show-tasks-flashcards-button{
-      a{
-        padding: 9px 10px;
+  .show-tasks-container{
+    width: 100vw;
+    .show-task{
+      .video-div{
+        video{
+          height: 250px;
+        }
       }
     }
   }
@@ -115,17 +98,13 @@
 //MEDIA QUERYS 395 ----------
 
 @media (max-width: 395px){
-  .show-tasks-buttons{
-    .show-tasks-goback-button{
-      a{
-        padding: 9px 10px;
-        font-size: 15px;
-      }
-    }
-    .show-tasks-flashcards-button{
-      a{
-        padding: 9px 5px;
-        font-size: 15px;
+  .show-tasks-container{
+    width: 100vw;
+    .show-task{
+      .video-div{
+        video{
+          height: 200px;
+        }
       }
     }
   }

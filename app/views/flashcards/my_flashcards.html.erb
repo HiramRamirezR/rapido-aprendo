@@ -2,11 +2,16 @@
   <div class="my-flashcard-title">
     <h2>Flashcards</h2>
   </div>
-    <div class="my-flashcards">
+    <div class="my-flashcards" data-controller="flashcard-index-color">
       <% @flashcards.each do | flashcard | %>
   <%= link_to tasks_path do %>
         <div class="my-flashcard">
-        <p><%= flashcard.content %></p>
+          <div class="my-flashcard-title">
+            <h5><%= flashcard.content %></h5>
+          </div>
+          <div class="my-flashcard-info">
+            <p><%= flashcard.answer %></p>
+          </div>
         </div>
       <% end %>
   <% end %>
