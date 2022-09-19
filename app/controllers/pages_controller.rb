@@ -6,7 +6,7 @@ class PagesController < ApplicationController
 
   def dashboard
     @user = current_user
-    @tasks = current_user.tasks.first(3)
+    @tasks = Task.first(3)
     @flashcards = Flashcard.first(4)
   end
 end
