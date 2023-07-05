@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# ruby "3.1.2"
-ruby "2.7.1"
+ruby "3.1.2"
+# ruby "2.7.1"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
@@ -31,6 +31,8 @@ gem "jbuilder"
 gem "dotenv-rails", groups: [:development, :test]
 
 gem "cloudinary"
+
+gem 'bootstrap', '~> 5.0'
 
 
 # Use Redis adapter to run Action Cable in production
